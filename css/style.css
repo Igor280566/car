@@ -1,0 +1,385 @@
+html {
+ box-sizing: border-box;
+}
+ *, *::before, ::after {
+ box-sizing: inherit;
+}
+a {
+ color: inherit;
+ text-decoration: none;
+}
+li {
+ list-style: none;
+}
+
+body {
+font-family: 'Be Vietnam Pro', sans-serif;
+font-family: 'Inter', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Be Vietnam Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 28px;
+letter-spacing: 0.006em;
+color: #FFFFFF;
+background-color: #000000;
+}
+.container {
+max-width: 1220px;
+margin: 0 auto;
+padding: 0 10px;
+}
+.header {
+padding-top: 40px;
+}
+.header-wrap {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+.nav {
+ margin-left: auto;
+}
+.nav-list {
+ display: flex;
+ gap: 0 48px;
+}
+.nav-list__link {
+ font-style: normal;
+ font-weight: 600;
+ font-size: 16px;
+ line-height: 24px;
+}
+.nav-list__link:hover {
+ color: #EE8313;
+}
+.header-button {
+ margin-left: 75px;
+ padding: 12px 24px;
+ background-color: #EE8313;
+ color: #FFFFFF;
+}
+.header-button:hover,
+.banner-buy:hover {
+ background-color:  #c56b0a;
+}
+#banner-section {
+ position: relative;
+ overflow: hidden;
+}
+.banner {
+ padding-top: 107px;
+ max-width: 475px;
+}
+.banner-title {
+ font-size: 52px;
+ line-height: 64px;
+ margin-bottom: 32px;
+}
+.banner-subtitle {
+ font-size: 17px;
+ line-height: 28px;
+ letter-spacing: -0.408px;
+ color: #FFFFFF;
+ opacity: 0.8;
+ margin-bottom: 48px;
+}
+.banner-buy {
+ font-weight: 600;
+ font-size: 16px;
+ line-height: 24px;
+ letter-spacing: 0.01em;
+ padding: 12px 24px;
+ background-color: #EE8313;
+ color: #FFFFFF;
+ margin-right: 60px;
+}
+.banner-video {
+ font-weight: 600;
+ font-size: 16px;
+ line-height: 24px;
+ letter-spacing: 0.01em;
+ padding: 12px 24px;
+ background-color: transparent;
+ color: #EE8313;
+ border: 1px solid #EE8313;
+ margin-bottom: 80px;
+}
+.banner-video:hover {
+ color: #c56b0a;
+}
+.features {
+ font-weight: 600;
+ line-height: 24px;
+ letter-spacing: 0.01em;
+}
+.features strong {
+ ont-weight: 700;
+ font-size: 40px;
+ line-height: 52px;
+ letter-spacing: -0.0041em;
+ margin-right: 16px;
+ vertical-align: sub;
+}
+.banner-video + .features {
+ margin-right: 40px;
+}
+.banner-img {
+ position: absolute;
+ width: 60%;
+ height: 100%;
+ top: 0;
+ right: 0;
+}
+
+.banner-img::before {
+ position: absolute;
+ content: '';
+ z-index: 2;
+ top: 0;
+ right: 0;
+ width: 96%;
+ height: 100%;
+ background: url(../img/banner-car.png) no-repeat;
+}
+.banner-img::after {
+ position: absolute;
+ content: '';
+ z-index: 1;
+ top:0;
+ right: 0;
+ width: 70%;
+ height: 100%;
+ background-color: rgb(52 52 52 / 30%);
+ margin-top: 95px;
+}
+.rent-section {
+ padding-top: 60px;
+}
+.rent-title {
+ font-size: 52px;
+ line-height: 64px;
+ text-align: center;
+ letter-spacing: 0.006em;
+ margin-bottom: 40px;
+}
+.rent {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 32px;
+}
+.rent-img {
+position: relative;
+font-weight: 600;
+ height: 525px;
+ background: url(../img/rent-supercars.jpg) 50%/cover no-repeat;
+}
+.rent-img:nth-child(2) {
+ background-image: url(../img/rent-sportcars.jpg);
+}
+.rent-img:nth-child(3) {
+ background-image: url(../img/rent-suv.jpg);
+}
+.rent-img:nth-child(4) {
+ background-image: url(../img/rent-supersuv.jpg);
+}
+
+.rent-name {
+ position: absolute;
+ top: 48px;
+ left: 48px;
+ font-size: 40px;
+ letter-spacing: 0.6px;
+}
+.rent-link {
+ position: absolute;
+ bottom: 48px;
+ right: 60px;
+}
+.rent-link::after {
+ position: absolute;
+ content: '';
+ width: 8px;
+ height: 16px;
+ top: 50%;
+ right: -23px;
+ background: url(../img/Vector.svg) 50%/cover no-repeat;
+ transform: translateY(-50%);
+}
+.rent-link:hover {
+ color: #EE8313;
+}
+.other-section {
+ padding-top: 120px;
+}
+.other-title {
+ font-size: 52px;
+ line-height: 64px;
+ letter-spacing: 0.006em;
+ margin-bottom: 66px;
+}
+.other {
+ display: flex;
+ justify-content: space-between;
+ gap: 24px;
+}
+.other-img {
+ margin-bottom: 24px;
+ 
+}
+.other-services {
+ font-weight: 700;
+ font-size: 24px;
+ line-height: 32px;
+ letter-spacing: 0.006em;
+ margin-bottom: 16px;
+}
+.other-services__descr {
+ opacity: 0,8;
+}
+.destination-section {
+ padding-top: 120px;
+}
+.destination {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ gap: 24px;
+}
+.destination-title {
+ max-width: 591px;
+ font-size: 52px;
+ line-height: 64px;
+ letter-spacing: 0.006em;
+ margin-bottom: 66px;
+ text-align: center;
+ margin: 0 auto 40px;
+}
+.destination-img {
+ margin: 24px 0;
+}
+.destination-city {
+ font-weight: 700;
+ font-size: 24px;
+ line-height: 32px;
+ margin-bottom: 10px;
+}
+.destination-locations {
+ letter-spacing: 0.0041em;
+ opacity: 0.8;
+ margin-bottom: 25px;
+}
+.destination-price {
+ position: relative;
+ display: block;
+ font-weight: 600;
+ font-size: 16px;
+ line-height: 28px;
+ letter-spacing: 0.0041em;
+ padding-left: 40px;
+ margin-bottom: 17px;
+}
+.destination-price::before {
+ position: absolute;
+ content: '';
+ width: 30px;
+ height: 30px;
+ top: 0;
+ left: 0;
+ background: url(../img/car.svg) no-repeat;
+ margin-right: 19px;
+}
+.destination-link {
+ letter-spacing: 0.0041em;
+ color: #EE8313;
+}
+
+.location-section {
+ padding: 120px 0 107px;
+
+}
+.location-title {
+ max-width: 591px;
+ font-size: 52px;
+ line-height: 64px;
+ letter-spacing: 0.006em;
+ margin-bottom: 66px;
+ text-align: center;
+ margin: 0 auto 40px;
+}
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+} 
+.footer-logo {
+  flex-basis: 235px;
+  min-height: 300px;
+}
+.footer-nav {
+  margin-left: auto;
+}
+.list-nav {
+  min-height: 167px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.nav-inner {
+  display: flex;
+  gap: 40px;
+}
+
+.footer-wrap {
+ padding-top: 40px;
+ background: #1F1905;
+}
+.logo-name {
+ font-weight: 600;
+ font-size: 16px;
+ line-height: 24px;
+ letter-spacing: 0.01em;
+ margin-left: 17px;
+}
+.logo-text {
+ margin-top: 35px; 
+ font-size: 18px;
+ line-height: 32px;
+}
+.nav-list__link_title {
+ font-weight: 700;
+ font-size: 18px;
+ line-height: 20px;
+}
+.nav-list__link {
+  font-size: 16px;
+  line-height: 20px;
+  opacity: 0.8;
+}
+.social-list {
+  margin-left: 98px;
+}
+.social-list-item {
+  font-weight: 700;
+ font-size: 20px;
+ line-height: 30px;
+}
+.social-icon {
+  min-height: 167px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.copyright {
+  min-height: 28px;
+  background-color: #EE8313;
+}
+.copyright-footer {
+  padding: 20px 0;
+  text-align: center;
+}
+.copyright__text {
+ font-size: 16px;
+ line-height: 28px;
+}
+
