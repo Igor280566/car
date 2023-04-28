@@ -365,7 +365,7 @@ font-weight: 600;
  line-height: 30px;
 }
 .social-icon {
-  min-height: 167px;
+  min-height: 168px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
